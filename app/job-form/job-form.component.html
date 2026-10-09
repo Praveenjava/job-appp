@@ -1,0 +1,35 @@
+<div class="form-container">
+    <h2>Join our team</h2>
+  
+    <form (ngSubmit)="submit()">
+  
+      <div class="row">
+        <input placeholder="Full Name" [(ngModel)]="formData.fullName" name="fullName">
+        <input placeholder="Email" [(ngModel)]="formData.email" name="email">
+      </div>
+  
+      <div class="row">
+        <input placeholder="Phone" [(ngModel)]="formData.phone" name="phone">
+        <input placeholder="Location" [(ngModel)]="formData.location" name="location">
+      </div>
+  
+      <div class="row">
+        <input placeholder="Position" [(ngModel)]="formData.position" name="position">
+        <input placeholder="Experience" [(ngModel)]="formData.experience" name="experience">
+        <input placeholder="Education" [(ngModel)]="formData.education" name="education">
+      </div>
+  
+      <input placeholder="Skills" [(ngModel)]="formData.skills" name="skills">
+  
+      <div class="row">
+        <input type="number" placeholder="Salary" [(ngModel)]="formData.expectedSalary" name="salary">
+        <input type="date" [(ngModel)]="formData.startDate" name="startDate">
+      </div>
+  
+      <textarea placeholder="Cover Letter" [(ngModel)]="formData.coverLetter" name="coverLetter"></textarea>
+  
+      <input placeholder="LinkedIn" [(ngModel)]="formData.linkedin" name="linkedin">
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>

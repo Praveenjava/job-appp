@@ -1,0 +1,13 @@
+<table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Position</th>
+    </tr>
+  
+    <tr *ngFor="let app of applications">
+      <td>{{app.fullName}}</td>
+      <td>{{app.email}}</td>
+      <td>{{app.position}}</td>
+    </tr>
+  </table>
